@@ -12,13 +12,25 @@ The module requests the policy using Iubenda's API, then caches the policy for 2
 
 If the policy is a pro version, then the fallback is Iubenda's API embed.
 
+To do
+-----
 Install Package from github pasticcinformatici.com
-------
-- Download the latest version https://github.com/ciratt/Ciratt_Iubenda/archive/main.zip of the module.
+
+- Download the latest version https://github.com/ciratt/Ciratt_Iubenda/archive/main.zip of the module;
 
 - Extract the module in your Magento directory:
 ```
 unzip Ciratt_Iubenda-main.zip
+```
+
+- create the Ciratt folder, and the Iubenda subfolder, in app/code:
+```
+cd app/code
+mkdir Ciratt
+cd Ciratt
+mkdir Iubenda
+cd Iubenda
+mv  -v ~/Ciratt_Iubenda-main/* ~/Iubenda/
 ```
 
 - Run the following command in Magento 2 root folder:
@@ -32,13 +44,6 @@ php bin/magento cache:clean
 php bin/magento cache:flush
 ```
 
-To do
------
-
-* Options in WordPress's admin area to set cache timings, table of contents, and which fallback button style should be used
-* Add ability to choose which page the policy appears on, rather than needing to use a tag
-
-
 Disclaimer
 ----------
-And, of course, this module is in no way affiliated or endorsed by Iubenda, WordPress, or Automattic.
+And, of course, this module is in no way affiliated or endorsed by Iubenda, Magento, or Automattic.

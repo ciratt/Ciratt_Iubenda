@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+<!--
+ * PasticcInformatici.Com
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to info@pasticcinformatici.com so we can send you a copy immediately.
+ *
+ * @copyright  Copyright (c) 2017 Skeeller srl (https://www.pasticcinformatici.com)
+ *
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ciratt" translate="label" sortOrder="501">
+            <label>Ciratt Extensions</label>
+        </tab>
+        <section id="cookiesolution" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Iubenda Cookiesolution</label>
+            <tab>ciratt</tab>
+            <resource>Ciratt_Iubenda::cookiesolution_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Module Enable</label>
+                    <comment>Automatically block scripts detected by the plugin.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="jscode" translate="label" type="textarea" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>JavaScript code</label>
+                    <comment>Enter the Iubenda JavaScript Code.</comment>
+                </field>
+                <field id="nojscode" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>JavaScript code not entered or incorrect</label>
+                    <comment>message to be displayed frontend in case of wrong or malfunctioning Iubenda JavaScript Code</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
