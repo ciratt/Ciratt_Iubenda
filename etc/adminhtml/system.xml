@@ -40,7 +40,7 @@
                     <comment>Enter the Iubenda JavaScript Code.</comment>
                 </field>
                 <field id="nojscode" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>JavaScript code not entered or incorrect</label>
+                    <label>JavaScript code not entered</label>
                     <comment>message to be displayed frontend in case of wrong or malfunctioning Iubenda JavaScript Code</comment>
                 </field>
             </group>
