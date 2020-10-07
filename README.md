@@ -35,7 +35,8 @@ mv  -v ~/Ciratt_Iubenda-main/* ~/Iubenda/
 
 - Run the following command in Magento 2 root folder:
 ```
-rm -rf var/di/* var/generation/* var/cache/* var/page_cache/* var/view_preprocessed/* var/composer_home/cache/* pub/static/* generated/code/*
+rm -rf var/di/* var/generation/* var/cache/* var/page_cache/* var/view_preprocessed/* 
+rm -rf var/composer_home/cache/* pub/static/* generated/code/*
 php bin/magento setup:upgrade
 php bin/magento setup:di:compile
 php bin/magento setup:static-content:deploy -f
