@@ -1,5 +1,5 @@
 # iubenda
-Iubenda for Magento 2.X.X
+Cookie Solution for Magento 2.X.X
 =====================
 
 (A work in progress)
