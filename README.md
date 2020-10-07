@@ -47,3 +47,9 @@ php bin/magento cache:flush
 Disclaimer
 ----------
 And, of course, this module is in no way affiliated or endorsed by Iubenda, Magento, or Automattic.
+
+Contact
+----------
+For info, questions, collaborations or support:
+- email: info@pasticcinformatici.com
+- telephone: +39 041 5352646
